@@ -1,0 +1,25 @@
+info:
+  name: get_dealer_profile
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://api.operation.ksauto.net/qa-operportal-api/https://t8mp2jgnxa.execute-api.ap-southeast-1.amazonaws.com/qa/get_dealer_profile
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "entity": "AY",
+          "dealer_code": "UATA2"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
