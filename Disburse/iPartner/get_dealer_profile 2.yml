@@ -1,7 +1,7 @@
 info:
-  name: get_dealer_profile
+  name: get_dealer_profile 2
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
